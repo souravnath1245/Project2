@@ -173,6 +173,10 @@ Media Quries
 ----------  */
 
 @media only screen and (max-width: 668px) {
+  
+  .link{
+    display: none;
+  }
   .container {
     width: 100%;
     margin: 0 auto;
@@ -203,23 +207,24 @@ Media Quries
     grid-template-columns: 1fr;
   }
   .blogs {
+    width: 270px;margin: 20px auto;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     box-shadow: 1px 0px 6px 4px grey;
-    margin: 20px;
     border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .blogs-image {
-    width: 350px;
+    width: 200px;
     margin-right: 0px;
     margin-bottom: 16px;
   }
   
   .content h2 {
     width: 300px;
-    color: chocolate;
+    color: rgb(107, 75, 53);
   }
   .content p{
     text-align: center;
