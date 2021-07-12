@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 .header {
-  max-width: 100%;
+  width: 100%;
   background-color: blue;
 }
 .navbar ul {
@@ -166,4 +166,79 @@ p {
 }
 .course-rating .clock {
   color: blue;
+}
+
+/*----------- 
+Media Quries
+----------  */
+
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar ul {
+    padding: 10px 10px;
+  }
+
+  .logoImage {
+    width: 40px;
+  }
+  .top-players h2 {
+    text-align: center;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .player img {
+    margin-bottom: 20px;
+  }
+  .top-blogs h2 {
+    text-align: center;
+  }
+  .players-blogs {
+    grid-template-columns: 1fr;
+  }
+  .blogs {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 0px 6px 4px grey;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .blogs-image {
+    width: 350px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  
+  .content h2 {
+    width: 300px;
+    color: chocolate;
+  }
+  .content p{
+    text-align: center;
+  }
+
+  /* ------------
+  Course Styles  
+  ---------------*/
+  .player-courses .section-title{
+    text-align: center;
+  }
+  .courses {
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+  .course-details {
+   margin-bottom: 20px;
+   border-radius: 15px;
+   box-shadow: 1px 0px 6px 4px grey;
+  }
 }
